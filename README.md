@@ -10,6 +10,7 @@ This repository contains a collection of Jupyter notebooks showcasing various da
 -   [Project 2: FredAPI Unemployment Data](https://github.com/benkaan001/pandas_and_beyond/blob/main/analyze_data/01_unemployment.ipynb)
 -   [Project 3: Social Security Registered Names Data](https://github.com/benkaan001/pandas_and_beyond/blob/main/analyze_data/02_registered_names.ipynb)
 -   [Project 4: IMF Exchange Rate Data](https://github.com/benkaan001/pandas_and_beyond/blob/main/analyze_data/03_exchange_rates.ipynb)
+-   [Project 5: Standford Open Policing Project](https://github.com/benkaan001/pandas_and_beyond/blob/main/analyze_data/04_standford_open_policing_project.ipynb)
 
 ### Dataset Creation Projects
 -   [Project 1: 100 Meter Olympics Dataset using readHtml](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/00_read_html.ipynb)
