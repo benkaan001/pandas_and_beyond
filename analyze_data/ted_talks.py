@@ -23,7 +23,7 @@ def str_to_list(ratings_str: str) -> list:
         raise ValueError("Invalid string representation of a Python list object.")
 
 
-def extract_count(dict_list):
+def extract_count(dict_list: dict) -> int:
     """
     Extracts the count values from a list of dictionaries and returns their sum.
 
