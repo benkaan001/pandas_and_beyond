@@ -44,3 +44,27 @@ def extract_count(dict_list: dict) -> int:
     10
     """
     return sum(int(d['count']) for d in dict_list)
+
+
+def extract_negative_remark_count(dict_list: dict) -> int:
+    """
+Extracts the total count of negative remarks from a list of dictionaries.
+
+Parameters:
+dict_list (list[dict]): A list of dictionaries, each containing a 'name' key representing the type of remark and a 'count' key representing the number of occurrences of that type of remark.
+
+Returns:
+int: The total count of negative remarks in the dict_list, where a negative remark is defined as one of 'Longwinded', 'Unconvincing', or 'Obnoxious'.
+
+Example:
+dict_list = [{'name': 'Longwinded', 'count': '5'}, {'name': 'Inappropriate', 'count': '2'}, {'name': 'Obnoxious', 'count': '3'}]
+extract_negative_remark_count(dict_list) -> 8
+In this example, there are 5 occurrences of 'Longwinded' and 3 occurrences of 'Obnoxious', so the total count of negative remarks is 8.
+"""
+    remarks = ['Longwinded', 'Unconvincing', 'Obnoxious']
+    total_count = 0
+    for d in dict_list:
+        if d['name'] in remarks:
+            count = int(d['count'])
+            total_count += count
+    return total_count
