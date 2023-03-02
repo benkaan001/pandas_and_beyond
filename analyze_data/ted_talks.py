@@ -68,3 +68,34 @@ In this example, there are 5 occurrences of 'Longwinded' and 3 occurrences of 'O
             count = int(d['count'])
             total_count += count
     return total_count
+
+
+
+def extract_funny_count(dict_list: list) -> int:
+    """
+    Extracts the count of the 'Funny' category from a list of dictionaries.
+
+    Parameters:
+    -----------
+    dict_list : list
+        A list of dictionaries, where each dictionary contains a 'name' key and a 'count' key.
+
+    Returns:
+    --------
+    int
+        The total count of the 'Funny' category in the list of dictionaries.
+
+    Example:
+    --------
+    >>> dict_list = [{'name': 'Funny', 'count': '10'},
+                     {'name': 'Cool', 'count': '5'},
+                     {'name': 'Useful', 'count': '7'},
+                     {'name': 'Funny', 'count': '3'}]
+    >>> extract_funny_count(dict_list)
+    13
+    """
+    funny_count = 0
+    for d in dict_list:
+        if d['name'] == 'Funny':
+            funny_count += int(d['count'])
+    return funny_count
