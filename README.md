@@ -25,8 +25,8 @@ This repository contains a collection of Jupyter notebooks showcasing various da
 pandas_and_beyond/
 ├── analyze_data/
 │   ├── __init__.py
-│   ├── project.ipynb
-│   ├── project.py
+│   ├── 00_project.ipynb
+│   ├── 01_project.py
 │   ├── ...
 ├── data/
 │   ├── __init__.py
@@ -43,20 +43,24 @@ pandas_and_beyond/
 │       └── ...
 ├── generate_data/
 │   ├── __init__.py
-│   ├── 01_web_scraping.ipynb
-│   ├── 02_data_cleaning.ipynb
+│   ├── 00_create_dataset.ipynb
+│   ├── 01_web_scrape.ipynb
+│   ├── ...
 │   └── using_csv/
 │       ├── __init__.py
-│       ├── web_scraping.ipynb
+│       ├── 00_read_csv.ipynb
 │       ├── ...
 │       └── ...
 ├── helper/
 │   ├── __init__.py
 │   ├── helper_function.ipynb
-│   └── helper_module.py
+│   ├── helper_module.py
+│   └── ...
 └── tests/
     ├── __init__.py
-    └── test_.py
+    ├── test_.py
+    └── ...
+
 ```
 
 
