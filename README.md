@@ -20,6 +20,45 @@ This repository contains a collection of Jupyter notebooks showcasing various da
 - [Project 4: IMF Exchange Rates Dataset using readHtml](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/03_exchange_rates.ipynb)
 
 
+## File Organization
+```
+pandas_and_beyond/
+├── analyze_data/
+│   ├── __init__.py
+│   ├── project.ipynb
+│   ├── project.py
+│   ├── ...
+├── data/
+│   ├── __init__.py
+│   ├── external/
+│   │   ├── external_data.csv
+│   │   └── ...
+│   └── generated/
+│       ├── raw/
+│       │   ├── raw_data.csv
+│       │   └── ...
+│       ├── cleaned/
+│       │   ├── cleaned_data.csv
+│       │   └── ...
+│       └── ...
+├── generate_data/
+│   ├── __init__.py
+│   ├── 01_web_scraping.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   └── using_csv/
+│       ├── __init__.py
+│       ├── web_scraping.ipynb
+│       ├── ...
+│       └── ...
+├── helper/
+│   ├── __init__.py
+│   ├── helper_function.ipynb
+│   └── helper_module.py
+└── tests/
+    ├── __init__.py
+    └── test_.py
+```
+
 
 ## Requirements
 
