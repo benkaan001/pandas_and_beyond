@@ -14,10 +14,11 @@ This repository contains a collection of Jupyter notebooks showcasing various da
 -   [Project 6: TED Talks Dataset](https://github.com/benkaan001/pandas_and_beyond/blob/main/analyze_data/05_ted_talks.ipynb)
 
 ### Dataset Creation Projects
--   [Project 1: 100 Meter Olympics Dataset using readHtml](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/00_read_html.ipynb)
+- [Project 1: 100 Meter Olympics Dataset using readHtml](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/00_read_html.ipynb)
 - [Project 2: ChatGPT Twitter Dataset using snscrape ](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/01_twitter.ipynb)
 - [Project 3: Social Security Registered Names using wget](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/02_create_dataset_using_wget_dict.ipynb)
 - [Project 4: IMF Exchange Rates Dataset using readHtml](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/03_exchange_rates.ipynb)
+- [Project 5: Airline Safety using CSV](https://github.com/benkaan001/pandas_and_beyond/blob/main/generate_data/using_csv/04_airline_safety.ipynb)
 
 
 ## File Organization
