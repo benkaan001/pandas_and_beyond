@@ -20,7 +20,6 @@ def check_memory_usage(df, col_type='object'):
     memory_dict['total_memory_usage'] = sum(memory_dict.values())
     return memory_dict
 
-
 def memory_usage_difference(df, col_type1='object', col_type2='category'):
     """
     Calculates the difference in memory usage between two different column data types for a given DataFrame.
@@ -40,15 +39,24 @@ def memory_usage_difference(df, col_type1='object', col_type2='category'):
     # Calculate the difference in memory usage
     diff_dict = {}
     for col in df.columns:
-        diff_dict[col] = memory_usage1[col] - memory_usage2[col]
+        diff = memory_usage1[col] - memory_usage2[col]
+        diff_pct = 100 * diff / memory_usage1[col]
+        diff_dict[col] = {
+            'diff_bytes': diff,
+            'diff_percent': f"{round(diff_pct)}%"
+        }
 
     # Calculate total difference
-    total_diff = sum(diff_dict.values())
+    total_diff_bytes = sum(diff_dict[col]['diff_bytes'] for col in df.columns)
+    total_diff_pct = 100 * total_diff_bytes / sum(memory_usage1.values())
 
     # Create output dictionary
     output_dict = {
         'column_diff': diff_dict,
-        'total_diff': total_diff
+        'total_diff': {
+            'diff_bytes': total_diff_bytes,
+            'diff_percent': f"{round(total_diff_pct)}%"
+        }
     }
 
     return output_dict
